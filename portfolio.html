@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhiljith Gigi - Robotics & IoT Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container">
+      <h1>AKHILJITH GIGI</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="about" class="hero section-padding">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <img src="assets/your-photo.jpg" alt="Akhiljith Gigi" class="profile-pic" />
+        </div>
+        <div class="hero-right">
+          <h2>Robotics and IoT Engineer</h2>
+          <p>
+            I am a passionate engineer specializing in
+            <strong>Robotics, Embedded Systems, and IoT</strong>. I combine hands-on
+            hardware expertise with robust software development (Python, C++) to
+            build autonomous and efficient systems. My projects utilize
+            platforms like <strong>Raspberry Pi</strong> and <strong>ESP32</strong>
+            for real-time control, computer vision, and data management. I am
+            driven by challenges in automation and industrial monitoring.
+          </p>
+          <a href="your-resume.pdf" class="btn primary-btn" target="_blank">Download Resume</a> 
+          <div class="social-links"> <br>
+            <a href="https://www.linkedin.com/in/akhiljithgigi/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/akhiljithvg" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <!-- simple, correct mailto link -->
+          <a href="mailto:akhiljithvg444@gmail.com"
+             class="social-email"
+             title="Email Akhiljith"
+             aria-label="Email Akhiljith">
+           <i class="fas fa-envelope"></i>
+          </a>
+          <!-- <a href="mailto:akhiljithvg444@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming & Tools</h3>
+            <ul>
+              <li>Python (OpenCV, NumPy)</li>
+              <li>C / Embedded C++</li>
+              <li>SQL (SQLite)</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Embedded Systems & Hardware</h3>
+            <ul>
+              <li>Raspberry Pi (Linux, GPIO)</li>
+              <li>ESP32 / Arduino</li>
+              <li>Motor Control (PID)</li>
+              <li>Sensor Integration (IR, Gas, Cameras)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Computer Vision & IoT</h3>
+            <ul>
+              <li>OpenCV</li>
+              <li>YOLO Object Detection</li>
+              <li>IoT Protocols (MQTT, HTTP)</li>
+              <li>Cloud Integration (Basic)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <h2>Featured Projects</h2>
+
+        <article class="project-card">
+          <img src="assets/lane-robot-thumb.jpg" alt="Autonomous Lane Following Robot" class="project-img" />
+          <div class="project-details">
+            <h3>Autonomous Lane Following Robot</h3>
+            <p><strong>Challenge:</strong> Develop a low-latency navigation system for predefined tracks.</p>
+            <p><strong>Action:</strong> Built a Raspberry Pi-based robot utilizing OpenCV for real-time lane detection and implemented a custom motor control algorithm.</p>
+            <p><strong>Result:</strong> Achieved ~95% accuracy in real-time lane keeping.</p>
+            <div class="project-links">
+              <a href="https://github.com/akhiljithvg/Lane-Follower" target="_blank"><i class="fab fa-github"></i> View Code</a>
+              <a href="https://www.youtube.com/watch?v=lrYYKH-F11M" target="_blank" class="secondary-link"><i class="fas fa-video"></i> See Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <img src="assets/sign-robot-thumb.jpg" alt="Autonomous Road Sign Detecting Robot" class="project-img" />
+          <div class="project-details">
+            <h3>Autonomous Road Sign Detecting Robot</h3>
+            <p><strong>Challenge:</strong> Enable automated decision-making based on visual inputs.</p>
+            <p><strong>Action:</strong> Used YOLO on Raspberry Pi to detect and classify road signs dynamically.</p>
+            <p><strong>Result:</strong> Enabled on-device deep learning inference for navigation.</p>
+            <div class="project-links">
+              <a href="https://github.com/akhiljithvg/Road-Sign-Detector" target="_blank"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" target="_blank" class="secondary-link"><i class="fas fa-video"></i> See Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/gas-leak-thumb.jpg" alt="IoT Gas Leakage Detection System" class="project-img" />
+          <div class="project-details">
+            <h3>IoT Gas Leakage Detection System</h3>
+            <p><strong>Challenge:</strong> Create a reliable real-time safety monitoring solution.</p>
+            <p><strong>Action:</strong> Developed an ESP32-based system with MQTT for real-time alerts and alarms.</p>
+            <p><strong>Result:</strong> Reduced alert latency to under 2 seconds.</p>
+            <div class="project-links">
+              <a href="https://github.com/akhiljithvg/IoT-Gas-Leak-Detector" target="_blank"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" target="_blank" class="secondary-link"><i class="fas fa-file-alt"></i> View Report</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ==Experience == -->
+    <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-card">
+                    <h3>Robotics Engineer <span class="timeframe">April 2024 - Present</span></h3>
+                    <h4>Sinrorobotics Pvt Ltd, Mangalore, India</h4>
+                    <ul>
+                        <li>*(**ACTION REQUIRED:** Add 2-3 bullet points here detailing your responsibilities and achievements in this current role.)*</li>
+                        <li>Example: Optimized embedded firmware for new product lines, reducing processing latency by 15%.</li>
+                        <li>Example: Collaborated with the hardware team on the design and testing of new motor control circuits.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card">
+                    <h3>Robotics & IoT Facilitator <span class="timeframe">September 2023 - March 2024</span></h3>
+                    <h4>Technical Career Education Pvt Ltd, Cochin, India</h4>
+                    <ul>
+                        <li>Led training and workshops for students on concepts including Raspberry Pi, Embedded C, and sensor integration.</li>
+                        <li>Developed practical, hands-on labs and projects to reinforce learning in robotics and IoT fundamentals.</li>
+                    </ul>
+                </div>
+                
+                <div class="education-languages-grid">
+                    <div class="section-card">
+                        <h3>🎓 Education</h3>
+                        <h4>B.Tech in Electronics and Communication Engineering</h4>
+                        <p>Viswajyothi College of Engineering and Technology</p>
+                        <p>Muvattupuzha, Kerala, India • 2022</p>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h3>🗣️ Language Proficiency</h3>
+                        <ul>
+                            <li>**English:** Professional Working Proficiency</li>
+                            <li>**Malayalam:** Native</li>
+                            <li>**Tamil:** Limited Working Proficiency</li>
+                            <li>**Hindi:** Limited Working Proficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2>📬 Get In Touch</h2>
+        <p>I'm open to new and challenging opportunities in embedded systems and robotics. Let's connect!</p>
+        <div class="contact-links">
+          <a href="mailto:akhiljithvg444@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+          <a href="https://www.linkedin.com/in/akhiljithgigi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/akhiljithvg" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Akhiljith Gigi. Designed and Built with ❤️.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <a href="#top" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    // Smooth scroll for nav and top button
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Show scroll button on scroll
+    const scrollBtn = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) scrollBtn.classList.add('show');
+      else scrollBtn.classList.remove('show');
+    });
+  </script>
+</body>
+</html>
